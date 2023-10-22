@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Promee_EditProfile.MainPage"
+             BackgroundColor="#FFB800"
+             Shell.BackgroundColor="#FFB800">
+    
+    <Shell.TitleView>
+        <HorizontalStackLayout 
+            VerticalOptions="Fill">
+            <Image
+                x:Name="imgbtn"
+                Source="backarrow.png"
+                HeightRequest="35">
+                <Image.GestureRecognizers>
+                <TapGestureRecognizer 
+                Tapped="OnImage1Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label
+                  Text="Edit Profile"
+                  FontFamily="EricaOneRegular"
+                  TextColor="Black"
+                  VerticalTextAlignment="Center"
+                  VerticalOptions="Center"
+                  HeightRequest="50"
+                  FontSize="Large"
+                  Margin="70,0,0,0"/>
+        </HorizontalStackLayout>
+    </Shell.TitleView>
+
+    <ScrollView>
+    <VerticalStackLayout>
+            <Ellipse  
+                Fill="white"  
+                WidthRequest="130"  
+                HeightRequest="130"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+            <Label
+                Text="Your Information"
+                TextColor="Black"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="22"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+                Margin="20,10,0,0"/>
+            <Label
+                Text="FIRST NAME"
+                TextColor="Black"
+                FontSize="13"
+                HorizontalOptions="Start"
+                FontAttributes="Bold"
+                Margin="20,10,0,0"/>
+            <Border
+                StrokeShape="RoundRectangle 10,10,10,10"
+                WidthRequest="330">
+                <Entry
+                    BackgroundColor="white"
+                    TextColor="Black"
+                    Placeholder="  Enter first name"
+                    PlaceholderColor="gray"
+                    WidthRequest="330"
+                    HeightRequest="45"/>
+            </Border>
+            <Label
+                Text="LAST NAME"
+                TextColor="Black"
+                FontSize="13"
+                HorizontalOptions="Start"
+                FontAttributes="Bold"
+                Margin="20,10,0,0"/>
+            <Border
+                    StrokeShape="RoundRectangle 10,10,10,10"
+                    WidthRequest="330">
+                <Entry
+                    BackgroundColor="white"
+                    TextColor="Black"
+                    Placeholder="  Enter last name"
+                    PlaceholderColor="gray"
+                    WidthRequest="330"
+                    HeightRequest="45"/>
+            </Border>
+            <Label
+                Text="CONTACT NUMBER"
+                TextColor="Black"
+                FontSize="13"
+                HorizontalOptions="Start"
+                FontAttributes="Bold"
+                Margin="20,10,0,0"/>
+            <Border
+                StrokeShape="RoundRectangle 10,10,10,10"
+                WidthRequest="330">
+                <Entry
+                    BackgroundColor="white"
+                    TextColor="Black"
+                    Placeholder="  Enter contact number"
+                    PlaceholderColor="gray"
+                    WidthRequest="330"
+                    HeightRequest="45"/>
+            </Border>
+            <Label
+                Text="EMAIL"
+                TextColor="Black"
+                FontSize="13"
+                HorizontalOptions="Start"
+                FontAttributes="Bold"
+                Margin="20,10,0,0"/>
+            <Border
+                StrokeShape="RoundRectangle 10,10,10,10"
+                WidthRequest="330">
+                <Entry
+                    BackgroundColor="white"
+                    TextColor="Black"
+                    Placeholder="  Enter email"
+                    PlaceholderColor="gray"
+                    WidthRequest="330"
+                    HeightRequest="45"/>
+            </Border>
+            <Button
+                x:Name="CounterBtn"
+                Text="Save changes"
+                TextColor="White"
+                FontSize="16"
+                FontAttributes="Bold"
+                BackgroundColor="Black"
+                Clicked="OnButtonClicked"
+                WidthRequest="180"
+                HeightRequest="60"
+                HorizontalOptions="Center"
+                Margin="0,40,0,0"/>
+
+    </VerticalStackLayout>
+</ScrollView>
+
+</ContentPage>
